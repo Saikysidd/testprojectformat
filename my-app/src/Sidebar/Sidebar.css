@@ -1,0 +1,65 @@
+.sidebar {
+    background-color: #9b59b6; 
+    height: 100vh; 
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .sidebar-brand {
+    background-color: #9b59b6;
+    text-align: center;
+    padding: 1rem 0;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  
+  .nav-link {
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    color: #fff;
+  }
+  
+  .nav-link i {
+    margin-right: 10px;
+  }
+  
+  .user-info {
+    padding-top: 10px;
+    border-top: 1px solid #ffffff33;
+    color: #fff;
+  }
+  
+  .user-info p {
+    margin: 0;
+  }
+  
+  .mt-auto {
+    margin-top: auto; 
+  }
+  
+  .bg-purple {
+    background-color: #9b59b6 !important;
+  }
+  .ditch-dollar-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    color: white; 
+  }
+  
+  .ditch-text {
+    position: relative;
+    font-size: 40px;
+    color: rgb(115, 228, 115);
+  }
+  
+  .dollar-text {
+    color: rgb(115, 228, 115); 
+    position: absolute;
+    font-size: 40px;
+    top: 1.5em; 
+    left: 3.5em; 
+  }
+ 
+  
