@@ -40,7 +40,7 @@ const Overview = () => {
   return (
     <Card className="mb-4 overview-card">
       <Card.Body>
-        <h5>Overview</h5>
+        <h5 className='d-flex justify-content-start'>Overview</h5>
         <div className="d-flex justify-content-end">
           <Button variant="link" style={{ color: '#9b59b6', display: 'flex', alignItems: 'end' }}>
             <AiOutlineDownload style={{ marginRight: 5 }} />

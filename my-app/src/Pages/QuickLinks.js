@@ -6,7 +6,7 @@ const QuickLinks = () => {
   return (
     <Card className="mb-2" > 
       <Card.Body > 
-        <h6>Quick Links</h6>
+        <h6 className='d-flex justify-content-start'>Quick Links</h6>
         <Row className="g-2">
           {[
             { icon: <FaMoneyBill />, text: 'Deposit' },
