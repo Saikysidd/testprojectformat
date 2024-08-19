@@ -3,12 +3,14 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faSearch, faBell } from '@fortawesome/free-solid-svg-icons';
+import { Link } from 'react-router-dom';
+import './Navbar.css'; // Make sure this path is correct
 
 const Navbar = () => {
   return (
     <nav className="navbar navbar-expand-lg bg-body-tertiary">
       <div className="container-fluid">
-        <a className="navbar-brand" href="#">Dashboard</a>
+        <Link className="navbar-brand" to="/">Dashboard</Link>
         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
         </button>
@@ -26,7 +28,6 @@ const Navbar = () => {
               <FontAwesomeIcon icon={faBell} />
             </button>
           </div>
-          
         </div>
       </div>
     </nav>
@@ -34,4 +35,3 @@ const Navbar = () => {
 };
 
 export default Navbar;
-
