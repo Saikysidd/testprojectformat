@@ -1,12 +1,37 @@
-.custom-card {
-    width: 140px; 
-    margin: 3px; 
-  }
+/* .custom-card {
+    width: 90px; 
+    margin: 1px; 
+  } */
   .custom-button {
     background-color: #b4b9b9;
     color: #0b0e11;
     border: 1px; 
   }
+ 
+/* Dashboard.css */
+
+.container-fluid {
+  padding: 0; /* Ensure no padding around the container */
+}
+
+.row {
+  margin: 0; /* Remove row margins */
+  padding: 0; /* Remove row padding */
+}
+
+.card {
+  margin-bottom: 0.5rem; /* Reduce space between cards */
+}
+
+.mb-3 {
+  margin-bottom: 0.5rem !important; /* Ensure consistent spacing */
+}
+
+.px-4 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
 
   
   
