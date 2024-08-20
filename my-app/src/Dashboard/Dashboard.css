@@ -6,7 +6,7 @@
 
 /* Further minimize the margin between the cards */
 .card {
-  margin-bottom: 0.25rem !important; /* Minimize bottom margin */
+  margin-bottom: 0.50rem !important; /* Minimize bottom margin */
 }
 
 /* Target the specific row containing Quick Links and Overview to reduce spacing */

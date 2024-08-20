@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import { Link } from 'react-router-dom';
 import 'bootstrap-icons/font/bootstrap-icons.css';
 import './Sidebar.css';
@@ -79,24 +79,20 @@ const Logout = () => (
 
 );
 const Sidebar = () => {
-  const [isSidebarVisible, setSidebarVisible] = useState(false);
-
-  const toggleSidebar = () => {
-    setSidebarVisible(!isSidebarVisible);
-  };
+ 
 
   return (
     <>
-      <button
+      {/* <button
         className={`btn btn-primary d-md-none ${isSidebarVisible ? '' : 'd-block'}`} 
         onClick={toggleSidebar}
         style={{ position: 'fixed', top: 10, left: 10, zIndex: 1050 }}
       >
         <i className="  bi bi-list "></i>
-      </button>
-      <div className={`  d-flex flex-column vh-100 sidebar ${isSidebarVisible ? 'd-block' : 'd-none d-md-block'}`}>
-      <div className="p-3 text-center sidebar-brand d-flex align-items-center ">
-  <h2 className="ditch-text m-0">Ditch</h2>
+      </button> */}
+      <div className="d-flex flex-column vh-100 sidebar d-none d-md-block">
+      <div className="p-3 text-center sidebar-brand d-flex align-items-center">
+        <h2 className="ditch-text m-0">Ditch</h2>
   <svg 
     width="10" 
     height="10" 

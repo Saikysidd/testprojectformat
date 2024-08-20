@@ -73,27 +73,27 @@ const Analytics = () => (
 );
 const QuickLinks = () => {
   return (
-    <Card className="mb-2 mt-5"> 
-      <Card.Body> 
+    <Card className="mb-2 mt-5">
+      <Card.Body>
         <h6 className='d-flex justify-content-start'>Quick Links</h6>
 
         <Row className="g-2">
           {[
             { icon: <DepositIcon />, text: 'Deposit' },
-            { icon: <Withdraw />, text: 'Withdraw ' },
+            { icon: <Withdraw />, text: 'Withdraw' },
             { icon: <Settings />, text: 'Settings' },
             { icon: <Verification />, text: 'Verification' },
             { icon: <Bonuses />, text: 'Bonuses' },
             { icon: <MT5 />, text: 'MT5' },
-            { icon: <Transfer/>, text: 'Transfer' },
+            { icon: <Transfer />, text: 'Transfer' },
             { icon: <History />, text: 'History' },
             { icon: <Partner />, text: 'Partner' },
             { icon: <Exchange />, text: 'Exchange' },
             { icon: <Analytics />, text: 'Analytics' },
           ].map((link, index) => (
-            <Col key={index} lg={2} md={6} sm={4} xs={6} className="mb-2">
-              <Card className="custom-card" style={{ height: '50px' }}>
-                <Button variant="light" className="w-100 text-center d-flex align-items-center justify-content-center" style={{ height: '100%' }}>
+            <Col key={index} lg={2} md={3} sm={4} xs={6} className="d-flex justify-content-center mb-2">
+              <Card className="custom-card" style={{ height: '100px', width: '100px' }}>
+                <Button variant="light" className="w-100 text-center d-flex align-items-center justify-content-center" style={{ height: '100%', width: '100%' }}>
                   <div>
                     <div>{link.icon}</div>
                     <div style={{ fontSize: '0.8rem' }}>{link.text}</div>
