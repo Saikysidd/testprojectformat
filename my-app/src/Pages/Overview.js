@@ -13,8 +13,8 @@ const data = {
     {
       label: 'Monthly Overview',
       data: [750, 500, 1000, 250, 1250, 700, 800, 400, 1400, 700, 150, 250],
-      backgroundColor: 'rgba(91, 55, 183, 0.5)',
-      borderColor: 'rgba(91, 55, 183, 1)',
+      backgroundColor: '#ad8edd',
+      borderColor: '#ad8edd',
       borderWidth: 1,
     },
   ],
@@ -25,16 +25,54 @@ const options = {
     y: {
       beginAtZero: true,
       min: 0,
-      max: 1500, 
+      max: 1500,
       ticks: {
-        stepSize: 500, 
-        callback: function(value) {
-          return `$${value}`; 
+        callback: function(value, index, values) {
+          const desiredTicks = [0, 250, 500, 1000, 1500];
+          return desiredTicks.includes(value) ? `$${value}` : '';
         },
+        stepSize: 250,
+      },
+      grid: {
+        display: false, 
+      },
+      border: {
+        display: false, 
+      },
+    },
+    x: {
+      grid: {
+        display: false, 
+      },
+      border: {
+        display: false, 
       },
     },
   },
+  plugins: {
+    legend: {
+      display: false, 
+    },
+    tooltip: {
+      enabled: true, 
+    },
+  },
+  layout: {
+    padding: 0, 
+  },
+  elements: {
+    line: {
+      borderColor: 'rgba(0, 0, 0, 0)', 
+    },
+    point: {
+      radius: 0,
+    },
+  },
+  backgroundColor: 'white', 
 };
+
+
+
 
 const Overview = () => {
   return (
@@ -49,7 +87,7 @@ const Overview = () => {
         </div>
         <div className="mb-3 d-flex justify-content-start">
           <Button variant="link" style={{ fontSize: '0.85rem', color: 'gray' }}>Monthly</Button>
-          <Button variant="link" style={{ fontSize: '0.85rem', color: 'gray' }}>Yearly</Button>
+          <Button variant="link" style={{ fontSize: '0.85rem', color: 'black', backgroundColor: '#f1ebf9' }}>Yearly</Button>
         </div>
         <Bar data={data} options={options} />
       </Card.Body>

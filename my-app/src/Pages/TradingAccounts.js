@@ -1,6 +1,6 @@
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
-import { FaExternalLinkAlt } from 'react-icons/fa';
+
 
 const TradingAccountCard = () => {
   const accountDetails = [
@@ -18,7 +18,14 @@ const TradingAccountCard = () => {
       balance: '0.00',
       currency: 'USD'
     },
+ 
   ];
+  const ExternalLink = () => (
+    <svg width="12" height="11" viewBox="0 0 12 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M9.66987 3.12403L1.7939 11L0.5 9.7061L8.37505 1.83013H1.43428V0H11.5V10.0657H9.66987V3.12403Z" fill="#667085"/>
+</svg>
+
+  );
 
   return (
     <Container className="mt-4">
@@ -39,17 +46,20 @@ const TradingAccountCard = () => {
                   }}>
                     {account.platform}
                   </span>
-                  &nbsp;&nbsp;&nbsp;&nbsp; {/* This adds a gap between platform and account number */}
+                  &nbsp;&nbsp;&nbsp;&nbsp; 
                   <span style={{ fontSize: '0.85rem', color: 'gray' }}>{account.accountNumber}</span>
                 </p>
                 <h3 className="mb-0" style={{ textAlign: 'start' }}>
                   {account.balance} <small style={{ fontSize: '0.85rem' }}>{account.currency}</small>
                 </h3>
               </div>
+              
               <div>
-                <FaExternalLinkAlt size={20} />
+              <ExternalLink size={20} />
               </div>
+             
             </Card.Body>
+            
           </Card>
         ))}
       </Card>

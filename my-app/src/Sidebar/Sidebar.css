@@ -1,12 +1,12 @@
 .sidebar {
-    background-color: #9b59b6; 
+    background-color:#9b76d6; 
     height: 100vh; 
     display: flex;
     flex-direction: column;
   }
   
   .sidebar-brand {
-    background-color: #9b59b6;
+    background-color: #9b76d6;
     text-align: center;
     padding: 1rem 0;
     font-size: 1.5rem;
@@ -39,7 +39,7 @@
   }
   
   .bg-purple {
-    background-color: #9b59b6 !important;
+    background-color: #9b76d6 !important;
   }
   .ditch-dollar-container {
     display: flex;
@@ -51,15 +51,16 @@
   .ditch-text {
     position: relative;
     font-size: 40px;
-    color: rgb(115, 228, 115);
+    color: #befb7a;
+    left: 1.0em; 
   }
   
   .dollar-text {
-    color: rgb(115, 228, 115); 
+    color: #befb7a; 
     position: absolute;
     font-size: 40px;
     top: 1.5em; 
-    left: 2.5em; 
+    left: 2.0em; 
   }
   .nav-link {
     display: flex;

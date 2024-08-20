@@ -3,7 +3,7 @@ import { Card } from 'react-bootstrap';
 
 const OpenTrades = () => {
   return (
-    <Card className="mb-4">
+    <Card className="mb-5">
       <Card.Body>
         <h5 className="d-flex justify-content-start">Open Trades</h5>
         <div className="card-deck">
@@ -12,7 +12,7 @@ const OpenTrades = () => {
             { currency: 'USDJPY', type: 'Long', amount: '0.52', change: '-0.09', color: 'text-danger' },
             { currency: 'EURUSD', type: 'Short', amount: '0.34', change: '-1.09', color: 'text-danger' }
           ].map((trade, index) => (
-            <Card key={index} className="mb-3">
+            <Card key={index} className="mb-5">
               <Card.Body>
                 <div className="d-flex justify-content-between">
                   <div style={{ display: 'flex', alignItems: 'center' }}>
@@ -23,8 +23,8 @@ const OpenTrades = () => {
                       style={{
                         fontSize: '0.8rem', 
                         color: 'black',
-                        backgroundColor: trade.type === 'Long' ? '#90ee90' : '#ffcccb',  
-                        padding: '0.2rem 0.4rem', 
+                        backgroundColor: trade.type === 'Long' ? '#ebffee' : '#fee9e7',  
+                        padding: '0.2rem 0.6rem', 
                         borderRadius: '0.2rem', 
                         boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
                         marginLeft: '0.3rem' 
