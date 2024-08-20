@@ -35,8 +35,8 @@ const TradingAccountCard = () => {
           <Card key={index} className="mb-3 shadow-sm">
             <Card.Body className="d-flex justify-content-start align-items-start">
               <div className="flex-grow-1">
-                <h6 className="text-muted">{account.accountType}</h6>
-                <p className="mb-1" style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'center' }}>
+                <h6 className="text-muted d-flex justify-content-start">{account.accountType}</h6>
+                <p className="mb-1" style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'start' }}>
                   <span style={{
                     fontSize: '0.9rem',
                     backgroundColor: 'rgba(0, 0, 0, 0.05)',
