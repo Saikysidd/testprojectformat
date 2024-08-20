@@ -38,7 +38,7 @@ const options = {
 
 const Overview = () => {
   return (
-    <Card className="mb-4 overview-card">
+    <Card className="mb-0 overview-card">
       <Card.Body>
         <h5 className='d-flex justify-content-start'>Overview</h5>
         <div className="d-flex justify-content-end">
@@ -48,8 +48,8 @@ const Overview = () => {
           </Button>
         </div>
         <div className="mb-3 d-flex justify-content-start">
-          <Button variant="link" style={{ color: 'black' }}>Monthly</Button>
-          <Button variant="link" style={{ color: 'black' }}>Yearly</Button>
+          <Button variant="link" style={{ fontSize: '0.85rem', color: 'gray' }}>Monthly</Button>
+          <Button variant="link" style={{ fontSize: '0.85rem', color: 'gray' }}>Yearly</Button>
         </div>
         <Bar data={data} options={options} />
       </Card.Body>

@@ -1,7 +1,5 @@
-
 import React from 'react';
 import { Card } from 'react-bootstrap';
-import { FaMoneyBill, FaWallet, FaCogs, FaUserCheck, FaGift, FaChartLine, FaExchangeAlt, FaHistory, FaUserFriends, FaChartBar } from 'react-icons/fa';
 
 const OpenTrades = () => {
   return (
@@ -17,13 +15,28 @@ const OpenTrades = () => {
             <Card key={index} className="mb-3">
               <Card.Body>
                 <div className="d-flex justify-content-between">
-                  <p style={{ fontSize: '0.9rem' }}>
-                    {trade.currency} <span style={{ fontSize: '0.8rem', color: trade.type === 'Long' ? 'green' : 'red' }}>{trade.type}</span>
-                  </p>
+                  <div style={{ display: 'flex', alignItems: 'center' }}>
+                    <p style={{ fontSize: '0.9rem', color: 'black', marginRight: '0.5rem' }}>
+                      {trade.currency}
+                    </p>
+                    <span 
+                      style={{
+                        fontSize: '0.8rem', 
+                        color: 'black',
+                        backgroundColor: trade.type === 'Long' ? '#90ee90' : '#ffcccb',  
+                        padding: '0.2rem 0.4rem', 
+                        borderRadius: '0.2rem', 
+                        boxShadow: '0 2px 4px rgba(0, 0, 0, 0.2)',
+                        marginLeft: '0.3rem' 
+                      }}
+                    >
+                      {trade.type}
+                    </span>
+                  </div>
                   <span style={{ fontSize: '0.8rem' }}>{trade.amount}</span>
                 </div>
-                <h6 className={trade.color}>
-                  {trade.change} <span style={{ color: 'black' }}>USD</span>
+                <h6 className={trade.color} style={{ display: 'flex', alignItems: 'start' }}>
+                  {trade.change} <span style={{ color: 'black', marginLeft: '0.5rem' }}>USD</span>
                 </h6>
               </Card.Body>
             </Card>
