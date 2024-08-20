@@ -28,42 +28,45 @@ const TradingAccountCard = () => {
   );
 
   return (
-    <Container className="mt-4">
-      <Card className="p-3 shadow-sm">
-        <h5 className='d-flex justify-content-start'>Trading Accounts</h5>
-        {accountDetails.map((account, index) => (
-          <Card key={index} className="mb-3 shadow-sm">
-            <Card.Body className="d-flex justify-content-start align-items-start">
-              <div className="flex-grow-1">
-                <h6 className="text-muted d-flex justify-content-start">{account.accountType}</h6>
-                <p className="mb-1" style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'start' }}>
-                  <span style={{
-                    fontSize: '0.9rem',
-                    backgroundColor: 'rgba(0, 0, 0, 0.05)',
-                    textShadow: '0px 0px 5px rgba(0, 0, 0, 0.1)',
-                    padding: '2px 4px',
-                    borderRadius: '4px'
-                  }}>
-                    {account.platform}
-                  </span>
-                  &nbsp;&nbsp;&nbsp;&nbsp; 
-                  <span style={{ fontSize: '0.85rem', color: 'gray' }}>{account.accountNumber}</span>
-                </p>
-                <h3 className="mb-0" style={{ textAlign: 'start' }}>
-                  {account.balance} <small style={{ fontSize: '0.85rem' }}>{account.currency}</small>
-                </h3>
-              </div>
-              
-              <div>
-              <ExternalLink size={20} />
-              </div>
-             
-            </Card.Body>
+    <Container className="mt-0">
+    <Card className="p-2 shadow-sm">
+      <h5 className='d-flex justify-content-start'>Trading Accounts</h5>
+      {accountDetails.map((account, index) => (
+        <Card key={index} className="mb-3 shadow-sm">
+          <Card.Body className="d-flex flex-column">
+            <div className="flex-grow-1">
+              <h6 className="text-muted d-flex justify-content-start">{account.accountType}</h6>
+              <p className="mb-1" style={{ fontSize: '0.9rem', display: 'flex', alignItems: 'start' }}>
+                <span style={{
+                  fontSize: '0.9rem',
+                  backgroundColor: 'rgba(0, 0, 0, 0.05)',
+                  textShadow: '0px 0px 5px rgba(0, 0, 0, 0.1)',
+                  padding: '2px 4px',
+                  borderRadius: '4px'
+                }}>
+                  {account.platform}
+                </span>
+                &nbsp;&nbsp;&nbsp;&nbsp; 
+                <span style={{ fontSize: '0.85rem', color: 'gray' }}>{account.accountNumber}</span>
+              </p>
+              <h3 className="mb-0" style={{ textAlign: 'start' }}>
+                {account.balance} <small style={{ fontSize: '0.85rem' }}>{account.currency}</small>
+              </h3>
+            </div>
             
-          </Card>
-        ))}
-      </Card>
-    </Container>
+            <div className="mt-auto ms-auto">
+              <ExternalLink size={30} />
+            </div>
+            
+          </Card.Body>
+          
+        </Card>
+      ))}
+    </Card>
+  </Container>
+  
+  
+  
   );
 };
 

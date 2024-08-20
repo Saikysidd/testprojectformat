@@ -154,7 +154,7 @@ const Sidebar = () => {
             </Link>
           </li>
         </ul>
-        <div className="bg-purple mt-auto p-3">
+        <div className="bg-purple mt-auto p-3 pt-5">
           <ul className="nav flex-column">
             <li className="nav-item mb-2">
               <Link to="/notifications" className="nav-link text-light">
@@ -185,7 +185,7 @@ const Sidebar = () => {
 
   Mohd Saqlain
 </div>
-          <p className="bg-purple nav-link text-light text-muted text-center">mohdsaqlain598@gmail.com</p>
+          <p className=" nav-link text-white text-center ms-5">mohdsaqlain598@gmail.com</p>
         </div>
       </div>
     </>

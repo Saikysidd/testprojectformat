@@ -8,20 +8,20 @@ import './Dashboard.css';
 
 const Dashboard = () => {
   return (
-    <Container fluid className="px-4">
-      <Row className="mb-3">
-        <Col lg={8} md={12} sm={12} className="mb-3">
+    <Container fluid className="px-2">
+      <Row className="mt-1">
+        <Col lg={8} md={12} sm={12} className="mt-0">
           <QuickLinks />
         </Col>
-        <Col lg={4} md={12} sm={12} className="mb-3">
+        <Col lg={4} md={12} sm={12} className="  mt-0">
           <TradingAccounts />
         </Col>
       </Row>
       <Row>
-        <Col lg={8} md={12} sm={12} className="mb-3">
+        <Col lg={8} md={12} sm={12} className="  mt-0">
           <Overview />
         </Col>
-        <Col lg={4} md={12} sm={12} className="mb-3">
+        <Col lg={4} md={12} sm={12} className=" mt-0">
           <OpenTrades />
         </Col>
       </Row>
