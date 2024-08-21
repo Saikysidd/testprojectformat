@@ -10,18 +10,18 @@ const Dashboard = () => {
   return (
     <Container fluid className="px-2">
       <Row className="mb-3">
-        <Col lg={8} md={12} sm={12} className="mb-3">
+        <Col lg={8} md={12} sm={12} xs={12} className="mb-3">
           <QuickLinks />
         </Col>
-        <Col lg={4} md={12} sm={12} className="  mb-3">
+        <Col lg={4} md={12} sm={12} xs={12} className="mb-3">
           <TradingAccounts />
         </Col>
       </Row>
       <Row>
-        <Col lg={8} md={12} sm={12} className="  mb-3">
+        <Col lg={8} md={12} sm={12} xs={12} className="mb-3">
           <Overview />
         </Col>
-        <Col lg={4} md={12} sm={12} className=" mb-3">
+        <Col lg={4} md={12} sm={12} xs={12} className="mb-3">
           <OpenTrades />
         </Col>
       </Row>

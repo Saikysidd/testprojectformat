@@ -91,8 +91,8 @@ const QuickLinks = () => {
             { icon: <Exchange />, text: 'Exchange' },
             { icon: <Analytics />, text: 'Analytics' },
           ].map((link, index) => (
-            <Col key={index} lg={2} md={3} sm={4} xs={6} className="d-flex justify-content-center mb-2">
-              <Card className="custom-card" style={{ height: '100px', width: '100px' }}>
+            <Col key={index} lg={2} md={3} sm={4} xs={4} className="d-flex justify-content-center mb-2">
+              <Card className="custom-card" style={{ height: '100%', width: '100%' }}>
                 <Button variant="light" className="w-100 text-center d-flex align-items-center justify-content-center" style={{ height: '100%', width: '100%' }}>
                   <div>
                     <div>{link.icon}</div>
