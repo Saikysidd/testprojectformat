@@ -43,10 +43,13 @@
 }
 @media (max-width: 768px) {
   .col-md-12 {
-    margin-bottom: 1rem !important;
+    margin-bottom: 0rem !important;
   }
   .open-trades-col {
-    margin-top: 1rem !important; /* Ensure this doesn’t cause overlap */
+    margin-top: -2.5rem !important; /* Ensure enough space on smaller screens */
+  }
+  .mb-3 {
+    margin-bottom: 0rem !important; /* Adjusted margin to avoid overlap */
   }
 }
 
