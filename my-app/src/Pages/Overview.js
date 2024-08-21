@@ -1,7 +1,7 @@
 
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
-import { AiOutlineDownload } from 'react-icons/ai';
+// import { AiOutlineDownload } from 'react-icons/ai';
 import { Bar } from 'react-chartjs-2';
 import { Chart, CategoryScale, LinearScale, BarElement, Title, Tooltip, Legend } from 'chart.js';
 
@@ -80,8 +80,10 @@ const Overview = () => {
       <Card.Body>
         <h5 className='d-flex justify-content-start'>Overview</h5>
         <div className="d-flex justify-content-end">
-          <Button variant="link" style={{ color: '#9b59b6', display: 'flex', alignItems: 'end' }}>
-            <AiOutlineDownload style={{ marginRight: 5 }} />
+        <Button variant="link" style={{ color: '#9b59b6', display: 'flex', alignItems: 'end' }}>
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M3.89999 18.3H20.1V20.1H3.89999V18.3ZM12.9 13.0548L18.3639 7.59L19.6365 8.8626L12 16.5L4.36349 8.8635L5.63609 7.59L11.1 13.053V3H12.9V13.0548Z" fill="#AD8EDD"/>
+            </svg>
             Download Report
           </Button>
         </div>
