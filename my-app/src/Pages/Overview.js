@@ -85,9 +85,9 @@ const Overview = () => {
             Download Report
           </Button>
         </div>
-        <div className="mb-3 d-flex justify-content-start ms-5">
-          <Button variant="link" style={{ fontSize: '0.85rem', color: 'gray',  }}>Monthly</Button>
-          <Button variant="link" style={{ fontSize: '0.85rem', color: 'black', backgroundColor: '#f1ebf9' }}>Yearly</Button>
+        <div className="mb-3 d-flex justify-content-start  mb-5">
+          <Button variant="link" style={{ fontSize: '0.85rem', color: 'gray', marginBottom:'50px' }}>Monthly</Button>
+          <Button variant="link" style={{ fontSize: '0.85rem', color: 'black',marginBottom:'50px', backgroundColor: '#f1ebf9' }}>Yearly</Button>
         </div>
         <Bar data={data} options={options} />
       </Card.Body>
