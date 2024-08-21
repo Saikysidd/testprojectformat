@@ -73,7 +73,7 @@ const Analytics = () => (
 );
 const QuickLinks = () => {
   return (
-    <Card className="mb-2 mt-5">
+    <Card className="mb-2 mt-0">
       <Card.Body>
         <h6 className='d-flex justify-content-start'>Quick Links</h6>
 
