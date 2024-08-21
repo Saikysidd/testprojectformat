@@ -90,7 +90,7 @@ const Sidebar = () => {
       >
         <i className="  bi bi-list "></i>
       </button> */}
-      <div className="d-flex flex-column vh-100 sidebar d-none d-md-block">
+      <div className="d-flex flex-column vh-100 sidebar d-none d-md-block "  >
       <div className="p-3 text-center sidebar-brand d-flex align-items-center">
         <h2 className="ditch-text m-0">Ditch</h2>
   <svg 
