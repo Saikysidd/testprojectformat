@@ -1,5 +1,6 @@
 import React from 'react';
 import { Card, Container } from 'react-bootstrap';
+import './TradingAccountCard.css'; 
 
 const TradingAccountCard = () => {
   const accountDetails = [
@@ -28,9 +29,9 @@ const TradingAccountCard = () => {
   return (
     <Container className="mt-0">
       <Card className="p-3 shadow-sm">
-        <h5 className='d-flex justify-content-start'>Trading Accounts</h5>
+        <h5 className='d-flex justify-content-start card-header'>Trading Accounts</h5>
         {accountDetails.map((account, index) => (
-          <Card key={index} className="mb-3 shadow-sm">
+          <Card key={index} className="trading-account-card shadow-sm">
             <Card.Body className="d-flex flex-column">
               <div className="flex-grow-1">
                 <h6 className="text-muted d-flex justify-content-start">{account.accountType}</h6>

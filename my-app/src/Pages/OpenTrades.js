@@ -1,11 +1,11 @@
 import React from 'react';
 import { Card } from 'react-bootstrap';
-
+import './Opentrade.css';  
 const OpenTrades = () => {
   return (
-    <Card className="mb-5">
+    <Card className="custom-margin">
       <Card.Body>
-        <h5 className="d-flex justify-content-start">Open Trades</h5>
+        <h5 className="d-flex justify-content-start ">Open Trades</h5>
         <div className="card-deck">
           {[
             { currency: 'GBP/USD', type: 'Long', amount: '0.12', change: '+56.00', color: 'text-success' },
